@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
 const userSchema = mongoose.Schema({
-  username: { type: String },
-  hashedPassword: { type: String },
+  username: { type: String, required: true },
+  hashedPassword: { type: String, required: true },
 });
 
 // * mongoose set() method takes 2 arguments
